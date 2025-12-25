@@ -1,0 +1,29 @@
+Started by user nitish patil
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/Git-integration
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/nitishpatil43/sample-project.git
+ > git init /root/.jenkins/workspace/Git-integration # timeout=10
+Fetching upstream changes from https://github.com/nitishpatil43/sample-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.50.1'
+ > git fetch --tags --force --progress -- https://github.com/nitishpatil43/sample-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nitishpatil43/sample-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision c144b4a39f7e864931ee15c8f9de2f70ba1969eb (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c144b4a39f7e864931ee15c8f9de2f70ba1969eb # timeout=10
+Commit message: "sample.war file added"
+ > git rev-list --no-walk c144b4a39f7e864931ee15c8f9de2f70ba1969eb # timeout=10
+[Git-integration] $ /bin/sh -xe /mnt/servers/apache-tomcat-10.1.50/temp/jenkins1914834460434520833.sh
++ cp /root/.jenkins/workspace/Git-integration/sample.war /mnt/servers/apache-tomcat-10.1.50/webapps/
++ sh /mnt/servers/apache-tomcat-10.1.50/bin/startup.sh
+Tomcat started.
+Finished: SUCCESS
