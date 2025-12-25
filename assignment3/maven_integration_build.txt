@@ -1,0 +1,36 @@
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar (215 kB at 1.3 MB/s)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ LoginWebApp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/Maven-integration/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ LoginWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ LoginWebApp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/.jenkins/workspace/Maven-integration/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ LoginWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ LoginWebApp ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- war:3.4.0:war (default-war) @ LoginWebApp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [LoginWebApp] in [/root/.jenkins/workspace/Maven-integration/target/LoginWebApp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/root/.jenkins/workspace/Maven-integration/src/main/webapp]
+[INFO] Building war: /root/.jenkins/workspace/Maven-integration/target/LoginWebApp.war
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ LoginWebApp ---
+[INFO] Installing /root/.jenkins/workspace/Maven-integration/pom.xml to /root/.m2/repository/com/javawebtutor/LoginWebApp/1.0-SNAPSHOT/LoginWebApp-1.0-SNAPSHOT.pom
+[INFO] Installing /root/.jenkins/workspace/Maven-integration/target/LoginWebApp.war to /root/.m2/repository/com/javawebtutor/LoginWebApp/1.0-SNAPSHOT/LoginWebApp-1.0-SNAPSHOT.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.775 s
+[INFO] Finished at: 2025-12-25T16:39:51Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
