@@ -1,0 +1,27 @@
+Started on Dec 26, 2025, 12:52:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 9ed98ea2198ceb52ecb78a0a665b19c448978e47 (refs/remotes/origin/2025Q1)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.50.1'
+ > git ls-remote -h -- https://github.com/nitishpatil43/Jenkins-NewProject.git # timeout=10
+Found 4 remote heads on https://github.com/nitishpatil43/Jenkins-NewProject.git
+[poll] Latest remote head revision on refs/heads/2025Q1 is: 9ed98ea2198ceb52ecb78a0a665b19c448978e47 - already built by 7
+Done. Took 69 ms
+No changes
+
+//console output post updating the index.html
+
+Started on Dec 26, 2025, 12:56:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 9ed98ea2198ceb52ecb78a0a665b19c448978e47 (refs/remotes/origin/2025Q1)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.50.1'
+ > git ls-remote -h -- https://github.com/nitishpatil43/Jenkins-NewProject.git # timeout=10
+Found 4 remote heads on https://github.com/nitishpatil43/Jenkins-NewProject.git
+[poll] Latest remote head revision on refs/heads/2025Q1 is: 3fab7b34b591b4f6a82d037f93b6907581ef2412
+Done. Took 64 ms
+Changes found
