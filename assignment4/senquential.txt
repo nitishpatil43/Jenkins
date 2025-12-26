@@ -1,0 +1,88 @@
+Started by user nitish patil
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/2025Q1
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/nitishpatil43/Jenkins-NewProject.git
+ > git init /root/.jenkins/workspace/2025Q1 # timeout=10
+Fetching upstream changes from https://github.com/nitishpatil43/Jenkins-NewProject.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.50.1'
+ > git fetch --tags --force --progress -- https://github.com/nitishpatil43/Jenkins-NewProject.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nitishpatil43/Jenkins-NewProject.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/2025Q1^{commit} # timeout=10
+Checking out Revision 9ed98ea2198ceb52ecb78a0a665b19c448978e47 (refs/remotes/origin/2025Q1)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9ed98ea2198ceb52ecb78a0a665b19c448978e47 # timeout=10
+Commit message: "2025Q1 branch added"
+First time build. Skipping changelog.
+[2025Q1] $ /bin/sh -xe /mnt/servers/apache-tomcat-10.1.50/temp/jenkins11389868143383821444.sh
++ sleep 10
+Triggering a new build of 2025Q2
+Finished: SUCCESS
+
+Started by upstream project "2025Q1" build number 1
+originally caused by:
+ Started by user nitish patil
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/2025Q2
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/nitishpatil43/Jenkins-NewProject.git
+ > git init /root/.jenkins/workspace/2025Q2 # timeout=10
+Fetching upstream changes from https://github.com/nitishpatil43/Jenkins-NewProject.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.50.1'
+ > git fetch --tags --force --progress -- https://github.com/nitishpatil43/Jenkins-NewProject.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nitishpatil43/Jenkins-NewProject.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/2025Q2^{commit} # timeout=10
+Checking out Revision 4fa94f633f39f1a1b56bba90478877eb00ed5325 (refs/remotes/origin/2025Q2)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4fa94f633f39f1a1b56bba90478877eb00ed5325 # timeout=10
+Commit message: "2025Q2 branch added"
+First time build. Skipping changelog.
+[2025Q2] $ /bin/sh -xe /mnt/servers/apache-tomcat-10.1.50/temp/jenkins628002859082516536.sh
++ sleep 10
+Triggering a new build of 2025Q3
+Finished: SUCCESS
+
+
+Started by upstream project "2025Q2" build number 1
+originally caused by:
+ Started by upstream project "2025Q1" build number 1
+ originally caused by:
+  Started by user nitish patil
+Running as SYSTEM
+Building in workspace /root/.jenkins/workspace/2025Q3
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/nitishpatil43/Jenkins-NewProject.git
+ > git init /root/.jenkins/workspace/2025Q3 # timeout=10
+Fetching upstream changes from https://github.com/nitishpatil43/Jenkins-NewProject.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.50.1'
+ > git fetch --tags --force --progress -- https://github.com/nitishpatil43/Jenkins-NewProject.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nitishpatil43/Jenkins-NewProject.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/2025Q3^{commit} # timeout=10
+Checking out Revision f2f40886947d1e18c3d3e4384e07c2a6cb0e5352 (refs/remotes/origin/2025Q3)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f2f40886947d1e18c3d3e4384e07c2a6cb0e5352 # timeout=10
+Commit message: "2025Q3 branch added"
+First time build. Skipping changelog.
+Finished: SUCCESS
+
