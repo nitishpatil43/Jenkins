@@ -1,0 +1,7 @@
+Started by user nitish Patil
+Running as SYSTEM
+Building on the built-in node in workspace /root/.jenkins/workspace/project
+[project] $ /bin/bash /mnt/apache-tomcat-10.1.50/temp/jenkins6303179214954879659.sh
+git version 2.50.1
+Git is already installed
+Finished: SUCCESS

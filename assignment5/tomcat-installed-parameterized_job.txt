@@ -1,0 +1,1062 @@
+Started by user nitish Patil
+Running as SYSTEM
+Building on the built-in node in workspace /root/.jenkins/workspace/project
+[project] $ /bin/bash /mnt/apache-tomcat-10.1.50/temp/jenkins14986283500437360104.sh
+mkdir: cannot create directory ‘server’: File exists
+--2026-01-05 17:03:34--  https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.50/bin/apache-tomcat-10.1.50.zip
+Resolving dlcdn.apache.org (dlcdn.apache.org)... 151.101.2.132, 2a04:4e42::644
+Connecting to dlcdn.apache.org (dlcdn.apache.org)|151.101.2.132|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 14854441 (14M) [application/zip]
+Saving to: ‘apache-tomcat-10.1.50.zip’
+
+     0K .......... .......... .......... .......... ..........  0% 8.45M 2s
+    50K .......... .......... .......... .......... ..........  0% 18.5M 1s
+   100K .......... .......... .......... .......... ..........  1% 14.4M 1s
+   150K .......... .......... .......... .......... ..........  1% 16.8M 1s
+   200K .......... .......... .......... .......... ..........  1% 16.6M 1s
+   250K .......... .......... .......... .......... ..........  2% 21.6M 1s
+   300K .......... .......... .......... .......... ..........  2% 19.3M 1s
+   350K .......... .......... .......... .......... ..........  2% 21.9M 1s
+   400K .......... .......... .......... .......... ..........  3% 13.9M 1s
+   450K .......... .......... .......... .......... ..........  3% 22.4M 1s
+   500K .......... .......... .......... .......... ..........  3% 14.3M 1s
+   550K .......... .......... .......... .......... ..........  4% 25.2M 1s
+   600K .......... .......... .......... .......... ..........  4% 26.6M 1s
+   650K .......... .......... .......... .......... ..........  4% 13.1M 1s
+   700K .......... .......... .......... .......... ..........  5% 27.0M 1s
+   750K .......... .......... .......... .......... ..........  5% 14.0M 1s
+   800K .......... .......... .......... .......... ..........  5% 25.7M 1s
+   850K .......... .......... .......... .......... ..........  6% 13.6M 1s
+   900K .......... .......... .......... .......... ..........  6% 26.9M 1s
+   950K .......... .......... .......... .......... ..........  6% 9.30M 1s
+  1000K .......... .......... .......... .......... ..........  7% 14.3M 1s
+  1050K .......... .......... .......... .......... ..........  7% 26.4M 1s
+  1100K .......... .......... .......... .......... ..........  7% 26.3M 1s
+  1150K .......... .......... .......... .......... ..........  8% 14.5M 1s
+  1200K .......... .......... .......... .......... ..........  8% 23.4M 1s
+  1250K .......... .......... .......... .......... ..........  8% 13.9M 1s
+  1300K .......... .......... .......... .......... ..........  9% 29.8M 1s
+  1350K .......... .......... .......... .......... ..........  9% 14.6M 1s
+  1400K .......... .......... .......... .......... ..........  9% 28.8M 1s
+  1450K .......... .......... .......... .......... .......... 10% 21.2M 1s
+  1500K .......... .......... .......... .......... .......... 10% 34.0M 1s
+  1550K .......... .......... .......... .......... .......... 11% 17.5M 1s
+  1600K .......... .......... .......... .......... .......... 11% 19.1M 1s
+  1650K .......... .......... .......... .......... .......... 11% 19.5M 1s
+  1700K .......... .......... .......... .......... .......... 12% 30.3M 1s
+  1750K .......... .......... .......... .......... .......... 12% 22.3M 1s
+  1800K .......... .......... .......... .......... .......... 12% 27.1M 1s
+  1850K .......... .......... .......... .......... .......... 13% 17.7M 1s
+  1900K .......... .......... .......... .......... .......... 13% 27.3M 1s
+  1950K .......... .......... .......... .......... .......... 13% 29.5M 1s
+  2000K .......... .......... .......... .......... .......... 14% 19.7M 1s
+  2050K .......... .......... .......... .......... .......... 14% 16.7M 1s
+  2100K .......... .......... .......... .......... .......... 14% 17.6M 1s
+  2150K .......... .......... .......... .......... .......... 15% 16.6M 1s
+  2200K .......... .......... .......... .......... .......... 15% 26.6M 1s
+  2250K .......... .......... .......... .......... .......... 15% 15.1M 1s
+  2300K .......... .......... .......... .......... .......... 16% 18.0M 1s
+  2350K .......... .......... .......... .......... .......... 16% 22.8M 1s
+  2400K .......... .......... .......... .......... .......... 16% 14.1M 1s
+  2450K .......... .......... .......... .......... .......... 17% 12.4M 1s
+  2500K .......... .......... .......... .......... .......... 17% 16.3M 1s
+  2550K .......... .......... .......... .......... .......... 17% 19.1M 1s
+  2600K .......... .......... .......... .......... .......... 18% 25.0M 1s
+  2650K .......... .......... .......... .......... .......... 18% 14.7M 1s
+  2700K .......... .......... .......... .......... .......... 18% 29.9M 1s
+  2750K .......... .......... .......... .......... .......... 19% 22.5M 1s
+  2800K .......... .......... .......... .......... .......... 19% 21.1M 1s
+  2850K .......... .......... .......... .......... .......... 19% 11.6M 1s
+  2900K .......... .......... .......... .......... .......... 20% 15.1M 1s
+  2950K .......... .......... .......... .......... .......... 20% 27.4M 1s
+  3000K .......... .......... .......... .......... .......... 21% 23.8M 1s
+  3050K .......... .......... .......... .......... .......... 21% 15.5M 1s
+  3100K .......... .......... .......... .......... .......... 21% 20.1M 1s
+  3150K .......... .......... .......... .......... .......... 22% 15.3M 1s
+  3200K .......... .......... .......... .......... .......... 22% 27.7M 1s
+  3250K .......... .......... .......... .......... .......... 22% 28.5M 1s
+  3300K .......... .......... .......... .......... .......... 23% 14.8M 1s
+  3350K .......... .......... .......... .......... .......... 23% 39.9M 1s
+  3400K .......... .......... .......... .......... .......... 23% 16.0M 1s
+  3450K .......... .......... .......... .......... .......... 24% 27.9M 1s
+  3500K .......... .......... .......... .......... .......... 24% 12.2M 1s
+  3550K .......... .......... .......... .......... .......... 24% 21.9M 1s
+  3600K .......... .......... .......... .......... .......... 25% 14.1M 1s
+  3650K .......... .......... .......... .......... .......... 25% 8.30M 1s
+  3700K .......... .......... .......... .......... .......... 25% 28.4M 1s
+  3750K .......... .......... .......... .......... .......... 26% 22.5M 1s
+  3800K .......... .......... .......... .......... .......... 26% 26.6M 1s
+  3850K .......... .......... .......... .......... .......... 26% 16.2M 1s
+  3900K .......... .......... .......... .......... .......... 27% 19.4M 1s
+  3950K .......... .......... .......... .......... .......... 27% 15.3M 1s
+  4000K .......... .......... .......... .......... .......... 27% 33.2M 1s
+  4050K .......... .......... .......... .......... .......... 28% 15.8M 1s
+  4100K .......... .......... .......... .......... .......... 28% 17.7M 1s
+  4150K .......... .......... .......... .......... .......... 28% 24.8M 1s
+  4200K .......... .......... .......... .......... .......... 29% 17.7M 1s
+  4250K .......... .......... .......... .......... .......... 29% 14.0M 1s
+  4300K .......... .......... .......... .......... .......... 29% 19.5M 1s
+  4350K .......... .......... .......... .......... .......... 30% 17.8M 1s
+  4400K .......... .......... .......... .......... .......... 30% 12.7M 1s
+  4450K .......... .......... .......... .......... .......... 31% 15.2M 1s
+  4500K .......... .......... .......... .......... .......... 31% 23.6M 1s
+  4550K .......... .......... .......... .......... .......... 31% 22.5M 1s
+  4600K .......... .......... .......... .......... .......... 32% 22.0M 1s
+  4650K .......... .......... .......... .......... .......... 32% 11.7M 1s
+  4700K .......... .......... .......... .......... .......... 32% 13.6M 1s
+  4750K .......... .......... .......... .......... .......... 33% 12.0M 1s
+  4800K .......... .......... .......... .......... .......... 33% 13.4M 1s
+  4850K .......... .......... .......... .......... .......... 33% 22.0M 1s
+  4900K .......... .......... .......... .......... .......... 34% 22.7M 1s
+  4950K .......... .......... .......... .......... .......... 34% 12.2M 1s
+  5000K .......... .......... .......... .......... .......... 34% 23.4M 1s
+  5050K .......... .......... .......... .......... .......... 35% 13.2M 1s
+  5100K .......... .......... .......... .......... .......... 35% 26.4M 1s
+  5150K .......... .......... .......... .......... .......... 35% 27.0M 1s
+  5200K .......... .......... .......... .......... .......... 36% 14.6M 1s
+  5250K .......... .......... .......... .......... .......... 36% 27.7M 0s
+  5300K .......... .......... .......... .......... .......... 36% 9.03M 0s
+  5350K .......... .......... .......... .......... .......... 37% 26.9M 0s
+  5400K .......... .......... .......... .......... .......... 37% 11.7M 0s
+  5450K .......... .......... .......... .......... .......... 37% 20.5M 0s
+  5500K .......... .......... .......... .......... .......... 38% 12.9M 0s
+  5550K .......... .......... .......... .......... .......... 38% 19.2M 0s
+  5600K .......... .......... .......... .......... .......... 38% 22.2M 0s
+  5650K .......... .......... .......... .......... .......... 39% 12.4M 0s
+  5700K .......... .......... .......... .......... .......... 39% 22.2M 0s
+  5750K .......... .......... .......... .......... .......... 39% 22.6M 0s
+  5800K .......... .......... .......... .......... .......... 40% 12.0M 0s
+  5850K .......... .......... .......... .......... .......... 40% 12.6M 0s
+  5900K .......... .......... .......... .......... .......... 41% 22.8M 0s
+  5950K .......... .......... .......... .......... .......... 41% 25.0M 0s
+  6000K .......... .......... .......... .......... .......... 41% 13.7M 0s
+  6050K .......... .......... .......... .......... .......... 42% 24.3M 0s
+  6100K .......... .......... .......... .......... .......... 42% 22.2M 0s
+  6150K .......... .......... .......... .......... .......... 42% 13.0M 0s
+  6200K .......... .......... .......... .......... .......... 43% 19.0M 0s
+  6250K .......... .......... .......... .......... .......... 43% 15.5M 0s
+  6300K .......... .......... .......... .......... .......... 43% 22.1M 0s
+  6350K .......... .......... .......... .......... .......... 44% 15.1M 0s
+  6400K .......... .......... .......... .......... .......... 44% 24.5M 0s
+  6450K .......... .......... .......... .......... .......... 44% 14.6M 0s
+  6500K .......... .......... .......... .......... .......... 45% 25.6M 0s
+  6550K .......... .......... .......... .......... .......... 45% 22.7M 0s
+  6600K .......... .......... .......... .......... .......... 45% 13.1M 0s
+  6650K .......... .......... .......... .......... .......... 46% 21.3M 0s
+  6700K .......... .......... .......... .......... .......... 46% 14.6M 0s
+  6750K .......... .......... .......... .......... .......... 46% 23.0M 0s
+  6800K .......... .......... .......... .......... .......... 47% 15.4M 0s
+  6850K .......... .......... .......... .......... .......... 47% 26.7M 0s
+  6900K .......... .......... .......... .......... .......... 47% 15.4M 0s
+  6950K .......... .......... .......... .......... .......... 48% 21.1M 0s
+  7000K .......... .......... .......... .......... .......... 48% 21.3M 0s
+  7050K .......... .......... .......... .......... .......... 48% 15.5M 0s
+  7100K .......... .......... .......... .......... .......... 49% 27.2M 0s
+  7150K .......... .......... .......... .......... .......... 49% 12.4M 0s
+  7200K .......... .......... .......... .......... .......... 49% 24.0M 0s
+  7250K .......... .......... .......... .......... .......... 50% 11.7M 0s
+  7300K .......... .......... .......... .......... .......... 50% 24.0M 0s
+  7350K .......... .......... .......... .......... .......... 51% 22.2M 0s
+  7400K .......... .......... .......... .......... .......... 51% 11.1M 0s
+  7450K .......... .......... .......... .......... .......... 51% 22.8M 0s
+  7500K .......... .......... .......... .......... .......... 52% 22.1M 0s
+  7550K .......... .......... .......... .......... .......... 52% 11.0M 0s
+  7600K .......... .......... .......... .......... .......... 52% 11.8M 0s
+  7650K .......... .......... .......... .......... .......... 53% 23.6M 0s
+  7700K .......... .......... .......... .......... .......... 53% 27.9M 0s
+  7750K .......... .......... .......... .......... .......... 53% 13.5M 0s
+  7800K .......... .......... .......... .......... .......... 54% 26.9M 0s
+  7850K .......... .......... .......... .......... .......... 54% 13.4M 0s
+  7900K .......... .......... .......... .......... .......... 54% 27.9M 0s
+  7950K .......... .......... .......... .......... .......... 55% 14.4M 0s
+  8000K .......... .......... .......... .......... .......... 55% 24.2M 0s
+  8050K .......... .......... .......... .......... .......... 55% 28.0M 0s
+  8100K .......... .......... .......... .......... .......... 56% 15.4M 0s
+  8150K .......... .......... .......... .......... .......... 56% 25.3M 0s
+  8200K .......... .......... .......... .......... .......... 56% 9.60M 0s
+  8250K .......... .......... .......... .......... .......... 57% 17.8M 0s
+  8300K .......... .......... .......... .......... .......... 57% 14.0M 0s
+  8350K .......... .......... .......... .......... .......... 57% 28.3M 0s
+  8400K .......... .......... .......... .......... .......... 58% 26.8M 0s
+  8450K .......... .......... .......... .......... .......... 58% 14.9M 0s
+  8500K .......... .......... .......... .......... .......... 58% 29.0M 0s
+  8550K .......... .......... .......... .......... .......... 59% 15.8M 0s
+  8600K .......... .......... .......... .......... .......... 59% 16.4M 0s
+  8650K .......... .......... .......... .......... .......... 59% 15.1M 0s
+  8700K .......... .......... .......... .......... .......... 60% 13.6M 0s
+  8750K .......... .......... .......... .......... .......... 60% 16.3M 0s
+  8800K .......... .......... .......... .......... .......... 61% 30.2M 0s
+  8850K .......... .......... .......... .......... .......... 61% 25.0M 0s
+  8900K .......... .......... .......... .......... .......... 61% 14.6M 0s
+  8950K .......... .......... .......... .......... .......... 62% 13.6M 0s
+  9000K .......... .......... .......... .......... .......... 62% 29.4M 0s
+  9050K .......... .......... .......... .......... .......... 62% 17.1M 0s
+  9100K .......... .......... .......... .......... .......... 63% 17.2M 0s
+  9150K .......... .......... .......... .......... .......... 63% 15.8M 0s
+  9200K .......... .......... .......... .......... .......... 63% 18.5M 0s
+  9250K .......... .......... .......... .......... .......... 64% 26.0M 0s
+  9300K .......... .......... .......... .......... .......... 64% 14.3M 0s
+  9350K .......... .......... .......... .......... .......... 64% 16.5M 0s
+  9400K .......... .......... .......... .......... .......... 65% 22.7M 0s
+  9450K .......... .......... .......... .......... .......... 65% 15.7M 0s
+  9500K .......... .......... .......... .......... .......... 65% 32.8M 0s
+  9550K .......... .......... .......... .......... .......... 66% 14.8M 0s
+  9600K .......... .......... .......... .......... .......... 66% 14.7M 0s
+  9650K .......... .......... .......... .......... .......... 66% 25.3M 0s
+  9700K .......... .......... .......... .......... .......... 67% 24.1M 0s
+  9750K .......... .......... .......... .......... .......... 67% 12.2M 0s
+  9800K .......... .......... .......... .......... .......... 67% 19.9M 0s
+  9850K .......... .......... .......... .......... .......... 68% 22.6M 0s
+  9900K .......... .......... .......... .......... .......... 68% 13.2M 0s
+  9950K .......... .......... .......... .......... .......... 68% 31.3M 0s
+ 10000K .......... .......... .......... .......... .......... 69% 16.8M 0s
+ 10050K .......... .......... .......... .......... .......... 69% 16.8M 0s
+ 10100K .......... .......... .......... .......... .......... 69% 27.5M 0s
+ 10150K .......... .......... .......... .......... .......... 70% 27.4M 0s
+ 10200K .......... .......... .......... .......... .......... 70% 18.3M 0s
+ 10250K .......... .......... .......... .......... .......... 71% 17.5M 0s
+ 10300K .......... .......... .......... .......... .......... 71% 16.9M 0s
+ 10350K .......... .......... .......... .......... .......... 71% 14.7M 0s
+ 10400K .......... .......... .......... .......... .......... 72% 15.0M 0s
+ 10450K .......... .......... .......... .......... .......... 72% 15.8M 0s
+ 10500K .......... .......... .......... .......... .......... 72% 26.8M 0s
+ 10550K .......... .......... .......... .......... .......... 73% 15.7M 0s
+ 10600K .......... .......... .......... .......... .......... 73% 21.9M 0s
+ 10650K .......... .......... .......... .......... .......... 73% 14.9M 0s
+ 10700K .......... .......... .......... .......... .......... 74% 26.7M 0s
+ 10750K .......... .......... .......... .......... .......... 74% 16.8M 0s
+ 10800K .......... .......... .......... .......... .......... 74% 14.8M 0s
+ 10850K .......... .......... .......... .......... .......... 75% 29.8M 0s
+ 10900K .......... .......... .......... .......... .......... 75% 23.0M 0s
+ 10950K .......... .......... .......... .......... .......... 75% 24.8M 0s
+ 11000K .......... .......... .......... .......... .......... 76% 30.6M 0s
+ 11050K .......... .......... .......... .......... .......... 76% 30.2M 0s
+ 11100K .......... .......... .......... .......... .......... 76% 27.2M 0s
+ 11150K .......... .......... .......... .......... .......... 77% 29.5M 0s
+ 11200K .......... .......... .......... .......... .......... 77% 16.9M 0s
+ 11250K .......... .......... .......... .......... .......... 77% 15.9M 0s
+ 11300K .......... .......... .......... .......... .......... 78% 20.4M 0s
+ 11350K .......... .......... .......... .......... .......... 78% 28.2M 0s
+ 11400K .......... .......... .......... .......... .......... 78% 31.9M 0s
+ 11450K .......... .......... .......... .......... .......... 79% 36.3M 0s
+ 11500K .......... .......... .......... .......... .......... 79% 54.4M 0s
+ 11550K .......... .......... .......... .......... .......... 79% 60.1M 0s
+ 11600K .......... .......... .......... .......... .......... 80% 54.3M 0s
+ 11650K .......... .......... .......... .......... .......... 80% 95.6M 0s
+ 11700K .......... .......... .......... .......... .......... 80% 33.5M 0s
+ 11750K .......... .......... .......... .......... .......... 81% 49.5M 0s
+ 11800K .......... .......... .......... .......... .......... 81% 94.3M 0s
+ 11850K .......... .......... .......... .......... .......... 82% 58.9M 0s
+ 11900K .......... .......... .......... .......... .......... 82% 94.7M 0s
+ 11950K .......... .......... .......... .......... .......... 82% 54.2M 0s
+ 12000K .......... .......... .......... .......... .......... 83% 91.0M 0s
+ 12050K .......... .......... .......... .......... .......... 83% 73.5M 0s
+ 12100K .......... .......... .......... .......... .......... 83% 83.6M 0s
+ 12150K .......... .......... .......... .......... .......... 84% 62.4M 0s
+ 12200K .......... .......... .......... .......... .......... 84% 94.5M 0s
+ 12250K .......... .......... .......... .......... .......... 84% 67.1M 0s
+ 12300K .......... .......... .......... .......... .......... 85% 88.9M 0s
+ 12350K .......... .......... .......... .......... .......... 85% 71.1M 0s
+ 12400K .......... .......... .......... .......... .......... 85% 76.8M 0s
+ 12450K .......... .......... .......... .......... .......... 86%  122M 0s
+ 12500K .......... .......... .......... .......... .......... 86% 82.2M 0s
+ 12550K .......... .......... .......... .......... .......... 86% 90.3M 0s
+ 12600K .......... .......... .......... .......... .......... 87% 92.2M 0s
+ 12650K .......... .......... .......... .......... .......... 87% 86.3M 0s
+ 12700K .......... .......... .......... .......... .......... 87% 99.0M 0s
+ 12750K .......... .......... .......... .......... .......... 88% 81.8M 0s
+ 12800K .......... .......... .......... .......... .......... 88%  112M 0s
+ 12850K .......... .......... .......... .......... .......... 88% 80.5M 0s
+ 12900K .......... .......... .......... .......... .......... 89% 81.7M 0s
+ 12950K .......... .......... .......... .......... .......... 89% 92.3M 0s
+ 13000K .......... .......... .......... .......... .......... 89% 82.1M 0s
+ 13050K .......... .......... .......... .......... .......... 90%  128M 0s
+ 13100K .......... .......... .......... .......... .......... 90% 60.5M 0s
+ 13150K .......... .......... .......... .......... .......... 90% 99.1M 0s
+ 13200K .......... .......... .......... .......... .......... 91% 93.5M 0s
+ 13250K .......... .......... .......... .......... .......... 91% 93.7M 0s
+ 13300K .......... .......... .......... .......... .......... 92% 94.9M 0s
+ 13350K .......... .......... .......... .......... .......... 92% 91.6M 0s
+ 13400K .......... .......... .......... .......... .......... 92% 70.1M 0s
+ 13450K .......... .......... .......... .......... .......... 93%  120M 0s
+ 13500K .......... .......... .......... .......... .......... 93%  105M 0s
+ 13550K .......... .......... .......... .......... .......... 93%  123M 0s
+ 13600K .......... .......... .......... .......... .......... 94%  223M 0s
+ 13650K .......... .......... .......... .......... .......... 94%  527M 0s
+ 13700K .......... .......... .......... .......... .......... 94%  546M 0s
+ 13750K .......... .......... .......... .......... .......... 95% 79.9M 0s
+ 13800K .......... .......... .......... .......... .......... 95% 62.9M 0s
+ 13850K .......... .......... .......... .......... .......... 95% 60.3M 0s
+ 13900K .......... .......... .......... .......... .......... 96% 89.0M 0s
+ 13950K .......... .......... .......... .......... .......... 96%  524M 0s
+ 14000K .......... .......... .......... .......... .......... 96%  107M 0s
+ 14050K .......... .......... .......... .......... .......... 97% 86.4M 0s
+ 14100K .......... .......... .......... .......... .......... 97% 82.7M 0s
+ 14150K .......... .......... .......... .......... .......... 97%  555M 0s
+ 14200K .......... .......... .......... .......... .......... 98%  465M 0s
+ 14250K .......... .......... .......... .......... .......... 98%  307M 0s
+ 14300K .......... .......... .......... .......... .......... 98%  562M 0s
+ 14350K .......... .......... .......... .......... .......... 99% 78.3M 0s
+ 14400K .......... .......... .......... .......... .......... 99% 45.8M 0s
+ 14450K .......... .......... .......... .......... .......... 99%  123M 0s
+ 14500K ......                                                100% 72.2M=0.7s
+
+2026-01-05 17:03:35 (21.7 MB/s) - ‘apache-tomcat-10.1.50.zip’ saved [14854441/14854441]
+
+Archive:  apache-tomcat-10.1.50.zip
+   creating: apache-tomcat-10.1.50/
+   creating: apache-tomcat-10.1.50/bin/
+   creating: apache-tomcat-10.1.50/conf/
+   creating: apache-tomcat-10.1.50/lib/
+   creating: apache-tomcat-10.1.50/logs/
+   creating: apache-tomcat-10.1.50/temp/
+   creating: apache-tomcat-10.1.50/webapps/
+   creating: apache-tomcat-10.1.50/webapps/ROOT/
+   creating: apache-tomcat-10.1.50/webapps/ROOT/WEB-INF/
+   creating: apache-tomcat-10.1.50/webapps/docs/
+   creating: apache-tomcat-10.1.50/webapps/docs/META-INF/
+   creating: apache-tomcat-10.1.50/webapps/docs/WEB-INF/
+   creating: apache-tomcat-10.1.50/webapps/docs/WEB-INF/jsp/
+   creating: apache-tomcat-10.1.50/webapps/docs/annotationapi/
+   creating: apache-tomcat-10.1.50/webapps/docs/api/
+   creating: apache-tomcat-10.1.50/webapps/docs/appdev/
+   creating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/
+   creating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/docs/
+   creating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/src/
+   creating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/src/mypackage/
+   creating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/web/
+   creating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/web/WEB-INF/
+   creating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/web/images/
+   creating: apache-tomcat-10.1.50/webapps/docs/architecture/
+   creating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess/
+   creating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/
+   creating: apache-tomcat-10.1.50/webapps/docs/config/
+   creating: apache-tomcat-10.1.50/webapps/docs/elapi/
+   creating: apache-tomcat-10.1.50/webapps/docs/images/
+   creating: apache-tomcat-10.1.50/webapps/docs/images/fonts/
+   creating: apache-tomcat-10.1.50/webapps/docs/jaspicapi/
+   creating: apache-tomcat-10.1.50/webapps/docs/jspapi/
+   creating: apache-tomcat-10.1.50/webapps/docs/servletapi/
+   creating: apache-tomcat-10.1.50/webapps/docs/tribes/
+   creating: apache-tomcat-10.1.50/webapps/docs/websocketapi/
+   creating: apache-tomcat-10.1.50/webapps/examples/
+   creating: apache-tomcat-10.1.50/webapps/examples/META-INF/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/checkbox/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/colors/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/compressionFilters/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/dates/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/error/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/filters/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/http2/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/el/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/listeners/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/nonblocking/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/num/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/sessions/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/trailers/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/util/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/validators/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/chat/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/jsp/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/lib/
+   creating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/tags/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/async/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/checkbox/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/colors/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/dates/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/error/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/forward/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/images/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/include/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspx/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/jsptoserv/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/num/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/security/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/security/protected/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/sessions/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/simpletag/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/snp/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/
+   creating: apache-tomcat-10.1.50/webapps/examples/jsp/xml/
+   creating: apache-tomcat-10.1.50/webapps/examples/servlets/
+   creating: apache-tomcat-10.1.50/webapps/examples/servlets/images/
+   creating: apache-tomcat-10.1.50/webapps/examples/servlets/nonblocking/
+   creating: apache-tomcat-10.1.50/webapps/examples/websocket/
+   creating: apache-tomcat-10.1.50/webapps/host-manager/
+   creating: apache-tomcat-10.1.50/webapps/host-manager/META-INF/
+   creating: apache-tomcat-10.1.50/webapps/host-manager/WEB-INF/
+   creating: apache-tomcat-10.1.50/webapps/host-manager/WEB-INF/jsp/
+   creating: apache-tomcat-10.1.50/webapps/host-manager/css/
+   creating: apache-tomcat-10.1.50/webapps/host-manager/images/
+   creating: apache-tomcat-10.1.50/webapps/manager/
+   creating: apache-tomcat-10.1.50/webapps/manager/META-INF/
+   creating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/
+   creating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/jsp/
+   creating: apache-tomcat-10.1.50/webapps/manager/css/
+   creating: apache-tomcat-10.1.50/webapps/manager/images/
+   creating: apache-tomcat-10.1.50/work/
+  inflating: apache-tomcat-10.1.50/BUILDING.txt  
+  inflating: apache-tomcat-10.1.50/CONTRIBUTING.md  
+  inflating: apache-tomcat-10.1.50/LICENSE  
+  inflating: apache-tomcat-10.1.50/NOTICE  
+  inflating: apache-tomcat-10.1.50/README.md  
+  inflating: apache-tomcat-10.1.50/RELEASE-NOTES  
+  inflating: apache-tomcat-10.1.50/RUNNING.txt  
+  inflating: apache-tomcat-10.1.50/bin/bootstrap.jar  
+  inflating: apache-tomcat-10.1.50/bin/catalina-tasks.xml  
+  inflating: apache-tomcat-10.1.50/bin/catalina.bat  
+  inflating: apache-tomcat-10.1.50/bin/catalina.sh  
+  inflating: apache-tomcat-10.1.50/bin/ciphers.bat  
+  inflating: apache-tomcat-10.1.50/bin/ciphers.sh  
+  inflating: apache-tomcat-10.1.50/bin/commons-daemon-native.tar.gz  
+  inflating: apache-tomcat-10.1.50/bin/commons-daemon.jar  
+  inflating: apache-tomcat-10.1.50/bin/configtest.bat  
+  inflating: apache-tomcat-10.1.50/bin/configtest.sh  
+  inflating: apache-tomcat-10.1.50/bin/daemon.sh  
+  inflating: apache-tomcat-10.1.50/bin/digest.bat  
+  inflating: apache-tomcat-10.1.50/bin/digest.sh  
+  inflating: apache-tomcat-10.1.50/bin/makebase.bat  
+  inflating: apache-tomcat-10.1.50/bin/makebase.sh  
+  inflating: apache-tomcat-10.1.50/bin/migrate.bat  
+  inflating: apache-tomcat-10.1.50/bin/migrate.sh  
+  inflating: apache-tomcat-10.1.50/bin/setclasspath.bat  
+  inflating: apache-tomcat-10.1.50/bin/setclasspath.sh  
+  inflating: apache-tomcat-10.1.50/bin/shutdown.bat  
+  inflating: apache-tomcat-10.1.50/bin/shutdown.sh  
+  inflating: apache-tomcat-10.1.50/bin/startup.bat  
+  inflating: apache-tomcat-10.1.50/bin/startup.sh  
+  inflating: apache-tomcat-10.1.50/bin/tomcat-juli.jar  
+  inflating: apache-tomcat-10.1.50/bin/tomcat-native.tar.gz  
+  inflating: apache-tomcat-10.1.50/bin/tool-wrapper.bat  
+  inflating: apache-tomcat-10.1.50/bin/tool-wrapper.sh  
+  inflating: apache-tomcat-10.1.50/bin/version.bat  
+  inflating: apache-tomcat-10.1.50/bin/version.sh  
+  inflating: apache-tomcat-10.1.50/conf/catalina.policy  
+  inflating: apache-tomcat-10.1.50/conf/catalina.properties  
+  inflating: apache-tomcat-10.1.50/conf/context.xml  
+  inflating: apache-tomcat-10.1.50/conf/jaspic-providers.xml  
+  inflating: apache-tomcat-10.1.50/conf/jaspic-providers.xsd  
+  inflating: apache-tomcat-10.1.50/conf/logging.properties  
+  inflating: apache-tomcat-10.1.50/conf/server.xml  
+  inflating: apache-tomcat-10.1.50/conf/tomcat-users.xml  
+  inflating: apache-tomcat-10.1.50/conf/tomcat-users.xsd  
+  inflating: apache-tomcat-10.1.50/conf/web.xml  
+  inflating: apache-tomcat-10.1.50/lib/annotations-api.jar  
+  inflating: apache-tomcat-10.1.50/lib/catalina-ant.jar  
+  inflating: apache-tomcat-10.1.50/lib/catalina-ha.jar  
+  inflating: apache-tomcat-10.1.50/lib/catalina-ssi.jar  
+  inflating: apache-tomcat-10.1.50/lib/catalina-storeconfig.jar  
+  inflating: apache-tomcat-10.1.50/lib/catalina-tribes.jar  
+  inflating: apache-tomcat-10.1.50/lib/catalina.jar  
+  inflating: apache-tomcat-10.1.50/lib/ecj-4.27.jar  
+  inflating: apache-tomcat-10.1.50/lib/el-api.jar  
+  inflating: apache-tomcat-10.1.50/lib/jakartaee-migration-1.0.10-shaded.jar  
+  inflating: apache-tomcat-10.1.50/lib/jasper-el.jar  
+  inflating: apache-tomcat-10.1.50/lib/jasper.jar  
+  inflating: apache-tomcat-10.1.50/lib/jaspic-api.jar  
+  inflating: apache-tomcat-10.1.50/lib/jsp-api.jar  
+  inflating: apache-tomcat-10.1.50/lib/servlet-api.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-api.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-coyote-ffm.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-coyote.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-dbcp.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-i18n-cs.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-i18n-de.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-i18n-es.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-i18n-fr.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-i18n-ja.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-i18n-ko.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-i18n-pt-BR.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-i18n-ru.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-i18n-zh-CN.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-jdbc.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-jni.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-util-scan.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-util.jar  
+  inflating: apache-tomcat-10.1.50/lib/tomcat-websocket.jar  
+  inflating: apache-tomcat-10.1.50/lib/websocket-api.jar  
+  inflating: apache-tomcat-10.1.50/lib/websocket-client-api.jar  
+  inflating: apache-tomcat-10.1.50/temp/safeToDelete.tmp  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/RELEASE-NOTES.txt  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/WEB-INF/web.xml  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/asf-logo-wide.svg  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/bg-button.png  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/bg-middle.png  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/bg-nav.png  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/bg-upper.png  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/favicon.ico  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/index.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/tomcat.css  
+  inflating: apache-tomcat-10.1.50/webapps/ROOT/tomcat.svg  
+  inflating: apache-tomcat-10.1.50/webapps/docs/BUILDING.txt  
+  inflating: apache-tomcat-10.1.50/webapps/docs/META-INF/context.xml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/RELEASE-NOTES.txt  
+  inflating: apache-tomcat-10.1.50/webapps/docs/RUNNING.txt  
+  inflating: apache-tomcat-10.1.50/webapps/docs/WEB-INF/jsp/403.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/docs/WEB-INF/web.xml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/aio.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/annotationapi/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/api/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/build.xml.txt  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/deployment.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/installation.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/introduction.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/processes.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/build.xml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/docs/README.txt  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/sample.war  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/src/mypackage/Hello.java  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/web/WEB-INF/web.xml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/web/hello.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/web/images/tomcat.gif  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/sample/web/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/source.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/appdev/web.xml.txt  
+  inflating: apache-tomcat-10.1.50/webapps/docs/apr.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/overview.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess/11_nio.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess/11_nio.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess/21_http11.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess/21_http11.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess/31_synchronous.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess/31_synchronous.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess/41_basic.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/requestProcess/41_basic.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/1_overview.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/1_overview.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/2_catalina_init.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/2_catalina_init.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/3_catalina_start_1.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/3_catalina_start_1.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/4_catalina_start_2.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/4_catalina_start_2.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/5_catalina_start_3.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/5_catalina_start_3.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/6_catalina_host_config.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/6_catalina_host_config.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/7_catalina_context_config.plantuml  
+  inflating: apache-tomcat-10.1.50/webapps/docs/architecture/startup/7_catalina_context_config.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/balancer-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/building.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/cdi.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/cgi-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/changelog.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/class-loader-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/cluster-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/comments.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/ajp.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/automatic-deployment.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster-channel.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster-deployer.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster-interceptor.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster-listener.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster-manager.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster-membership.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster-receiver.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster-sender.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster-valve.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cluster.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/context.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/cookie-processor.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/credentialhandler.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/engine.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/executor.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/filter.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/globalresources.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/host.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/http.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/http2.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/jar-scan-filter.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/jar-scanner.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/jaspic.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/listeners.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/loader.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/manager.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/realm.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/resources.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/runtime-attributes.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/server.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/service.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/sessionidgenerator.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/systemprops.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/config/valve.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/connectors.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/default-servlet.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/deployer-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/developers.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/elapi/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/graal.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/host-manager-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/html-host-manager-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/html-manager-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/add.gif  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/asf-logo.svg  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/code.gif  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/cors-flowchart.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/design.gif  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/docs-stylesheet.css  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/docs.gif  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/fix.gif  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/fonts/OpenSans400.woff  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/fonts/OpenSans400italic.woff  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/fonts/OpenSans600.woff  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/fonts/OpenSans600italic.woff  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/fonts/OpenSans700.woff  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/fonts/OpenSans700italic.woff  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/fonts/fonts.css  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/tomcat.gif  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/tomcat.png  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/update.gif  
+  inflating: apache-tomcat-10.1.50/webapps/docs/images/void.gif  
+  inflating: apache-tomcat-10.1.50/webapps/docs/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/introduction.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/jasper-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/jaspicapi/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/jdbc-pool.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/jndi-datasource-examples-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/jndi-resources-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/jspapi/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/logging.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/manager-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/maven-jars.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/mbeans-descriptors-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/mbeans-descriptors.dtd  
+  inflating: apache-tomcat-10.1.50/webapps/docs/monitoring.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/proxy-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/realm-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/rewrite.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/security-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/security-manager-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/servletapi/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/setup.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/ssi-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/ssl-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/tribes/developers.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/tribes/faq.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/tribes/interceptors.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/tribes/introduction.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/tribes/membership.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/tribes/setup.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/tribes/status.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/tribes/transport.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/virtual-hosting-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/web-socket-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/websocketapi/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/windows-auth-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/docs/windows-service-howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/META-INF/context.xml  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/CookieExample.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/CookieExample.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/HelloWorldExample.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/HelloWorldExample.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_cs.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_de.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_es.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_fr.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_ja.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_ko.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_pt.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_pt_BR.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_ru.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/LocalStrings_zh_CN.properties  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/RequestHeaderExample.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/RequestHeaderExample.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/RequestInfoExample.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/RequestInfoExample.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/RequestParamExample.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/RequestParamExample.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/ServletToJsp.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/ServletToJsp.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/SessionExample.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/SessionExample.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async0$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async0.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async0.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async1$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async1.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async2$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async2.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async2.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async3.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Async3.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/AsyncStockContextListener.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/AsyncStockContextListener.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/AsyncStockServlet.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/AsyncStockServlet.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Stockticker$Stock.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Stockticker$TickListener.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Stockticker.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/async/Stockticker.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/checkbox/CheckTest.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/checkbox/CheckTest.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/colors/ColorGameBean.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/colors/ColorGameBean.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilter.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilter.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/compressionFilters/CompressionFilterTestServlet.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/compressionFilters/CompressionResponseStream.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/compressionFilters/CompressionServletResponseWrapper.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/dates/JspCalendar.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/dates/JspCalendar.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/error/Smart.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/error/Smart.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/ExampleTagBase.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/ExampleTagBase.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/FooTag.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/FooTag.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/FooTagExtraInfo.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/FooTagExtraInfo.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/LogTag.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/LogTag.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/ValuesTag.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/examples/ValuesTag.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/filters/ExampleFilter.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/filters/ExampleFilter.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/http2/SimpleImagePush.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/http2/SimpleImagePush.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/BookBean.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/BookBean.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/FooBean.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/FooBean.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/ValuesBean.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/ValuesBean.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/el/Functions.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/el/Functions.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/EchoAttributesTag.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/FindBookSimpleTag.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/HelloWorldSimpleTag.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/RepeatSimpleTag.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/ShuffleSimpleTag.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/jsp2/examples/simpletag/TileSimpleTag.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/listeners/ContextListener.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/listeners/ContextListener.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/listeners/SessionListener.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/listeners/SessionListener.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter$CounterListener.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/nonblocking/ByteCounter.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter$NumberWriterListener.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/nonblocking/NumberWriter.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/num/NumberGuessBean.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/num/NumberGuessBean.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/sessions/DummyCart.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/sessions/DummyCart.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/sessions/Item.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/sessions/Item.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/trailers/ResponseTrailers$TrailerFieldSupplier.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/trailers/ResponseTrailers.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/trailers/ResponseTrailers.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/util/CookieFilter.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/util/CookieFilter.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/util/HTMLFilter.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/util/HTMLFilter.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/validators/DebugValidator.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/validators/DebugValidator.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/ExamplesConfig.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/ExamplesConfig.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/chat/ChatAnnotation.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/chat/ChatAnnotation.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Client$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Client.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Client.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage$ParseException.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawMessage.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardContextListener.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$2.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$3$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint$3.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/DrawboardEndpoint.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$1$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$2.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$MessageType.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Room$Player.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Room.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/Room.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/AbstractWebsocketMessage.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/BinaryWebsocketMessage.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/CloseWebsocketMessage.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/drawboard/wsmessages/StringWebsocketMessage.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoAnnotation.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoAnnotation.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation$CompletedFuture.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoAsyncAnnotation.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint$EchoMessageHandlerBinary.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint$EchoMessageHandlerText.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoEndpoint.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/EchoStreamAnnotation.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/echo/servers.json  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/Direction.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/Direction.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/Location$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/Location.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/Location.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/Snake.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/Snake.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/SnakeAnnotation.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer$1.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer.class  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/classes/websocket/snake/SnakeTimer.java  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/jsp/403.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/jsp/403.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/jsp/debug-taglib.tld  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/jsp/example-taglib.tld  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/jsp/jsp2-example-taglib.tld  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/lib/taglibs-standard-impl-1.2.5-migrated-0.0.1.jar  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5-migrated-0.0.1.jar  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/tags/displayProducts.tag  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/tags/helloWorld.tag  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/tags/panel.tag  
+  inflating: apache-tomcat-10.1.50/webapps/examples/WEB-INF/web.xml  
+  inflating: apache-tomcat-10.1.50/webapps/examples/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/async/async1.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/async/async1.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/async/async3.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/async/async3.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/async/index.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/async/index.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/checkbox/CheckTest.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/checkbox/check.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/checkbox/checkresult.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/checkbox/checkresult.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/checkbox/cresult.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/colors/ColorGameBean.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/colors/clr.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/colors/colors.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/colors/colrs.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/colors/colrs.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/dates/date.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/dates/date.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/dates/date.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/error/er.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/error/err.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/error/err.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/error/error.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/error/errorpge.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/error/errorpge.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/forward/forward.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/forward/forward.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/forward/fwd.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/forward/one.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/forward/one.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/forward/two.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/images/code.gif  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/images/execute.gif  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/images/return.gif  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/include/foo.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/include/foo.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/include/foo.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/include/inc.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/include/include.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/include/include.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/Functions.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/ValuesBean.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/ValuesTag.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/basic-arithmetic.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/basic-arithmetic.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/basic-comparisons.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/basic-comparisons.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/composite.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/composite.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/composite.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/functions.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/functions.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/functions.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/implicit-objects.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/implicit-objects.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/el/implicit-objects.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/FooBean.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/HelloWorldSimpleTag.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/ShuffleSimpleTag.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/TileSimpleTag.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/jspattribute.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/jspattribute.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/shuffle.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspattribute/shuffle.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspx/basic.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspx/basic.jspx  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspx/basic.jspx.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspx/svgexample.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspx/textRotate.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspx/textRotate.jpg  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspx/textRotate.jspx  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/jspx/textRotate.jspx.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/EchoAttributesTag.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/coda.jspf  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/coda.jspf.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/config.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/config.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/config.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/dynamicattrs.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/dynamicattrs.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/prelude.jspf  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/misc/prelude.jspf.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/BookBean.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/FindBookSimpleTag.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/Functions.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/HelloWorldSimpleTag.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/RepeatSimpleTag.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/book.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/book.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/book.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/hello.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/hello.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/hello.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/repeat.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/repeat.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/simpletag/repeat.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/displayProducts.tag.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/hello.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/hello.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/hello.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/helloWorld.tag.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/panel.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/panel.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/panel.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/panel.tag.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/products.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/products.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsp2/tagfiles/products.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsptoserv/ServletToJsp.java.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsptoserv/hello.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsptoserv/hello.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsptoserv/jsptoservlet.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/jsptoserv/jts.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/num/numguess.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/num/numguess.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/num/numguess.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/security/protected/error.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/security/protected/error.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/security/protected/index.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/security/protected/index.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/security/protected/login.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/security/protected/login.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/sessions/DummyCart.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/sessions/carts.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/sessions/carts.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/sessions/crt.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/sessions/shopping.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/sessions/shopping.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/simpletag/foo.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/simpletag/foo.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/simpletag/foo.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/snp/snoop.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/snp/snoop.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/snp/snoop.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/choose.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/choose.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/choose.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/foreach.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/foreach.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/foreach.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/howto.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/if.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/if.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/if.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/tagplugin/notes.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/xml/xml.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/xml/xml.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/examples/jsp/xml/xml.jsp.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/cookies.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/helloworld.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/images/code.gif  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/images/execute.gif  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/images/return.gif  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/index.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/nonblocking/bytecounter.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/reqheaders.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/reqinfo.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/reqparams.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/servlets/sessions.html  
+  inflating: apache-tomcat-10.1.50/webapps/examples/websocket/chat.xhtml  
+  inflating: apache-tomcat-10.1.50/webapps/examples/websocket/drawboard.xhtml  
+  inflating: apache-tomcat-10.1.50/webapps/examples/websocket/echo.xhtml  
+  inflating: apache-tomcat-10.1.50/webapps/examples/websocket/index.xhtml  
+  inflating: apache-tomcat-10.1.50/webapps/examples/websocket/snake.xhtml  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/META-INF/context.xml  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/WEB-INF/jsp/401.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/WEB-INF/jsp/403.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/WEB-INF/jsp/404.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/WEB-INF/manager.xml  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/WEB-INF/web.xml  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/css/manager.css  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/images/asf-logo.svg  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/images/favicon.ico  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/images/tomcat.svg  
+  inflating: apache-tomcat-10.1.50/webapps/host-manager/index.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/META-INF/context.xml  
+  inflating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/jsp/401.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/jsp/403.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/jsp/404.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/jsp/connectorCerts.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/jsp/connectorCiphers.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/jsp/connectorTrustedCerts.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/jsp/sessionDetail.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/jsp/sessionsList.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/WEB-INF/web.xml  
+  inflating: apache-tomcat-10.1.50/webapps/manager/css/manager.css  
+  inflating: apache-tomcat-10.1.50/webapps/manager/images/asf-logo.svg  
+  inflating: apache-tomcat-10.1.50/webapps/manager/images/favicon.ico  
+  inflating: apache-tomcat-10.1.50/webapps/manager/images/tomcat.svg  
+  inflating: apache-tomcat-10.1.50/webapps/manager/index.jsp  
+  inflating: apache-tomcat-10.1.50/webapps/manager/status.xsd  
+  inflating: apache-tomcat-10.1.50/webapps/manager/xform.xsl  
+apache-tomcat installed successfully
+Finished: SUCCESS
