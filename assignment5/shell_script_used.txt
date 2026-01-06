@@ -1,0 +1,39 @@
+#!/bin/bash
+
+if [[ "${environment}" == "apache-tomcat" ]]
+then
+        cd /mnt
+        mkdir server
+        cd server
+        wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.50/bin/apache-tomcat-10.1.50.zip
+        unzip apache-tomcat-10.1.50.zip
+        rm -rf apache-tomcat-10.1.50.zip
+        chmod -R 777 /mnt/server
+        echo "apache-tomcat installed successfully"
+elif [[ "${environment}" == "apache-maven" ]]
+then
+        cd /mnt
+        mkdir maven
+        cd maven
+        wget https://dlcdn.apache.org/maven/maven-3/3.9.12/binaries/apache-maven-3.9.12-bin.zip
+        unzip apache-maven-3.9.12-bin.zip
+        rm -rf apache-maven-3.9.12-bin.zip
+        echo 'export PATH="/mnt/maven/apache-maven-3.9.12/bin:$PATH"' >> ~/.bashrc
+        echo "Maven installed successfully"
+elif    [[ "${environment}" == "java" ]]
+then
+        java --version
+        if [[ $? == 0 ]]
+        then
+                echo "Java is already installed"
+        else 
+                dnf install java -y
+                echo "Java is installed successfully"
+        fi
+elif    [[  "${environment}" == "git" ]]
+then
+        git --version
+        if [[ $? == 0 ]]
+        then
+                echo "Git is already installed"
+        else
