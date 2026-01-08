@@ -1,0 +1,30 @@
+Started by user Nitish Patil
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /root/.jenkins/workspace/HTTPD deployement using pipeline
+[Pipeline] {
+[Pipeline] ws
+Running in /mnt/ws2
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (cloning the repo)
+[Pipeline] sh
++ sudo rm -rf /var/www/html/index.html
++ git clone https://github.com/nitishpatil43/webserver.git
+Cloning into 'webserver'...
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (index.html deployement)
+[Pipeline] sh
++ mv /mnt/ws1/webserver/index.html /var/www/html/
++ systemctl restart httpd
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // ws
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
+
