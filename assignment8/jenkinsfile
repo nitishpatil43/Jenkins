@@ -1,0 +1,38 @@
+pipeline {
+    agent {
+        node {
+            label 'built-in'
+            customeWorkspace '/mnt/jenkins-master'
+        }
+    }
+    stages {
+        stage('clone') {
+            steps {
+                cleanWs()
+                git changelog: false, credentialsId: 'GitHub', poll: false, url: 'https://github.com/nitishpatil43/LoginWebapp.git'
+            }
+        }
+        stage('build') {
+            steps {
+                sh "cd /mnt/jenkins-master/"
+                sh "mvn clean install"
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh "scp -i /mnt/key.pem /mnt/jenkins-master/LoginWebapp/target/LoginWebApp.war ec2-user@172.31.21.126 /mnt/server/apache-tomcat-10.1.50/webapps/"
+            }
+        }
+        stage('service-restart') {
+            agent {
+                label {
+                    label 'slave 1'
+                }
+            }
+            steps {
+                sh "sh /mnt/server/apache-tomcat-10.1.50/bin/startup.sh"
+            }
+        }
+    }
+    
+}
