@@ -1,0 +1,113 @@
+Started by user nitish patil
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /root/.jenkins/workspace/LoginWebapp
+[Pipeline] {
+[Pipeline] ws
+Running in /mnt/jenkins-master
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (clone)
+[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[Pipeline] git
+The recommended git tool is: NONE
+using credential GitHub
+Cloning the remote Git repository
+Cloning repository https://github.com/nitishpatil43/LoginWebapp.git
+ > git init /mnt/jenkins-master # timeout=10
+Fetching upstream changes from https://github.com/nitishpatil43/LoginWebapp.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.50.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/nitishpatil43/LoginWebapp.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nitishpatil43/LoginWebapp.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d96d25f2aa95ff632c6722ea97cd3b07378de711 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d96d25f2aa95ff632c6722ea97cd3b07378de711 # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b master d96d25f2aa95ff632c6722ea97cd3b07378de711 # timeout=10
+Commit message: "loginwebapp project"
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (build)
+[Pipeline] sh
++ mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.javawebtutor:LoginWebApp >--------------------
+[INFO] Building LoginWebApp Maven Webapp 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ LoginWebApp ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ LoginWebApp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /mnt/jenkins-master/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ LoginWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ LoginWebApp ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /mnt/jenkins-master/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ LoginWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ LoginWebApp ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- war:3.4.0:war (default-war) @ LoginWebApp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [LoginWebApp] in [/mnt/jenkins-master/target/LoginWebApp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/mnt/jenkins-master/src/main/webapp]
+[INFO] Building war: /mnt/jenkins-master/target/LoginWebApp.war
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ LoginWebApp ---
+[INFO] Installing /mnt/jenkins-master/pom.xml to /root/.m2/repository/com/javawebtutor/LoginWebApp/1.0-SNAPSHOT/LoginWebApp-1.0-SNAPSHOT.pom
+[INFO] Installing /mnt/jenkins-master/target/LoginWebApp.war to /root/.m2/repository/com/javawebtutor/LoginWebApp/1.0-SNAPSHOT/LoginWebApp-1.0-SNAPSHOT.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.993 s
+[INFO] Finished at: 2026-01-14T09:23:30Z
+[INFO] ------------------------------------------------------------------------
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (deploy)
+[Pipeline] sh
++ scp -i /mnt/key.pem target/LoginWebApp.war ec2-user@172.31.21.126:/mnt/server/apache-tomcat-10.1.50/webapps/
+[Pipeline] sh
++ sh /mnt/server/apache-tomcat-10.1.50/bin/startup.sh
+Tomcat started.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (service-restart)
+[Pipeline] node
+Running on slave 1 in /mnt/jenkins-slave/workspace/LoginWebapp
+[Pipeline] {
+[Pipeline] sh
++ sh /mnt/server/apache-tomcat-10.1.50/bin/startup.sh
+Tomcat started.
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // ws
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
+
